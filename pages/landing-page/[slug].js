@@ -46,7 +46,7 @@ export default function LandingPage({ page, blogPosts }) {
 export async function getStaticProps({ params }) {
   try {
     const page = await getLandingPage(params.slug);
-    const blogPosts = (await getPostsData(1, 2)).posts
+    const blogPosts = (await getPostsData({page: 1, pageSize: 2})).posts
 
     return { props: { page: camelcaseKeys(page), blogPosts: camelcaseKeys(blogPosts) } };
   } catch (e) {

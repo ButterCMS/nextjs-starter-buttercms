@@ -1129,6 +1129,9 @@ p {
 
 .single-blog .blog-header, .single-post .blog-header, .blog-roll-card .blog-header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 200px;
+  position: relative;
 }
 
 .single-blog .blog-header h5, .single-post .blog-header h5, .blog-roll-card .blog-header h5 {
@@ -1355,6 +1358,7 @@ p {
   border-radius: 0;
   width: 100%;
   margin-top: 15px;
+  height: 300px;
 }
 .single-post-thumbnail img {
   width: 100%;

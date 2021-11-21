@@ -1,5 +1,6 @@
 import Link from "next/link";
-import PostPreview from "./post-preview"
+
+import PostPreviewCondensed from "./post-preview-condensed"
 
 export default function Blog({ posts }) {
     return (
@@ -23,10 +24,11 @@ export default function Blog({ posts }) {
                     </div>
                 </div>
                 <div className="row justify-content-center">
-                    {posts.map(post => <PostPreview
+                    {posts.map(post => <PostPreviewCondensed
                         key={post.slug}
                         title={post.title}
                         coverImage={post.featuredImage}
+                        coverImageAlt={post.featuredImageAlt}
                         date={post.published}
                         author={post.author}
                         slug={post.slug}
