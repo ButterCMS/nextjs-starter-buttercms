@@ -1,14 +1,5 @@
 @charset "UTF-8";
-/* ============================
-  Template Name: SaaSdeck
-  Author: uideck
-  Description: Bootstrap 5 SaaS Landing Page.
-  Version: 1.0
-=============================== */
-/*===========================
-		COMMON css
-===========================*/
-@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap");
+
 html {
   scroll-behavior: smooth;
 }
