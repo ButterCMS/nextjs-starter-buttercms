@@ -1295,8 +1295,10 @@ p {
 
 .single-post-meta-info, .blog-roll-card-meta-info {
   font-size: 14px;
-  display: inline-block;
+  display: flex;
   position: relative;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .single-post-meta-info li, .blog-roll-card-meta-info li {
@@ -1310,22 +1312,28 @@ p {
   color: #888;
   font-size: 14px;
   font-weight: 500;
+  display: flex;
+  align-items: center;
 }
-.single-post-meta-info li a img, .blog-roll-card-meta-info li a img {
+.single-post-meta-info li a .author-avatar, .blog-roll-card-meta-info li a .author-avatar {
   height: 35px;
   width: 35px;
   border-radius: 50%;
+  overflow: hidden;
   display: inline-block;
   margin-right: 12px;
+  position: relative;
 }
+
 @media only screen and (min-width: 550px) {
-  .single-post-meta-info li a img, .blog-roll-card-meta-info li a img {
+  .single-post-meta-info li a .author-avatar, .blog-roll-card-meta-info li a .author-avatar {
     height: 35px;
     width: 35px;
   }
 }
+
 @media only screen and (min-width: 768px) {
-  .single-post-meta-info li a img, .blog-roll-card-meta-info li a img {
+  .single-post-meta-info li a .author-avatar, .blog-roll-card-meta-info li a .author-avatar {
     height: 50px;
     width: 50px;
   }

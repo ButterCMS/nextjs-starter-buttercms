@@ -2,6 +2,7 @@ import Image from "next/image"
 import Link from "next/link";
 
 import HumanDate from "@/components/human-date"
+import AuthorCard from '@/components/author-card';
 
 export default function PostsPreview({
   title,
@@ -20,7 +21,7 @@ export default function PostsPreview({
           <h2 className="blog-roll-card-header"><Link href={`/blog/${slug}`}><a>{title}</a></Link></h2>
           <ul className="blog-roll-card-meta-info">
             <li>
-              <a><img src={author.profile_image ? author.profile_image : '/images/team/team-1.png'} alt={`Profile image ${author.first_name} ${author.last_name}`} />{author.first_name} {author.last_name}</a>
+              <AuthorCard author={author} />
             </li>
             <li>
               <i className="lni lni-calendar"></i> <HumanDate dateString={date} />
