@@ -1,29 +1,74 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js + ButterCMS Starter Project
+Live Demo: https://nextjs-starter-buttercms.vercel.app/
 
-## Getting Started
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FButterCMS%2Fnextjs-starter-buttercms)
 
-First, run the development server:
+  
+This Next.js starter project fully integrates with dynamic sample content from your ButterCMS account, including main menu, pages, blog posts, categories, and tags, all with a beautiful, custom theme with already-implemented search functionality. All of the included sample content is automatically created in your account dashboard when you sign up for a free trial of ButterCMS.
+
+Once created, this project can be easily and quickly deployed to Vercel from the CLI ([see instructions below](#deploy-on-vercel))
+
+
+## Installation
+
+First, install the dependencies by running one of these commands, depending on your current setup:
+```bash
+npm install
+# or
+yarn install
+```
+
+If you use yarn, you might want to delete `package-lock.json` file to avoid possible  resolution inconsistencies caused by unsynchronized lock files.
+
+### Set API Token
+
+To fetch your ButterCMS content, add your API token as an environment variable. You can find it in your butterCMS account under settings -> API Token. If you don't already have a ButterCMS account, you can get one free [here](https://buttercms.com/join/). Set `NEXT_PUBLIC_BUTTER_CMS_API_KEY=<Your API Token>` in `.env`.
+
+```bash
+$ echo 'NEXT_PUBLIC_BUTTER_CMS_API_KEY=<Your API Token>' >> .env
+```
+
+### Run the local server
+You'll want to run server any time you want to view the project locally:
 
 ```bash
 npm run dev
 # or
 yarn dev
 ```
+After running the command, you should see a message:
+```
+ready - started server on 0.0.0.0:3000, url: http://localhost:3000
+```
+Congratulations! Your starter project is now live and can be viewed at [http://localhost:3000](http://localhost:3000).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+To quit the server press CONTROL-C.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+#### Build the app
+Use one of these commands which build the application for production usage:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+```bash
+npm run build
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+or
 
-## Learn More
+```bash
+yarn build
+```
 
-To learn more about Next.js, take a look at the following resources:
+#### Run production server
+After building your app run one of these commands to start a Next.js production server:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run start
+```
+
+or
+
+```bash
+yarn start
+```
 
 ## Preview mode
 To see what application really look like before it’s published, add `PREVIEW=true` to your `.env` file and restart your server. From within your butter account, you can also preview changes to the app using our built-in iframe previewer. For more information, see [https://buttercms.com/kb/preview-urls](https://buttercms.com/kb/preview-urls).
@@ -32,4 +77,10 @@ To see what application really look like before it’s published, add `PREVIEW=t
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Create a Vercel account at https://vercel.com/signup
+2. Download [the CLI](https://vercel.com/download):
+```bash
+npm i -g vercel
+```
+3. Add the API key as a secret `vercel secrets add butter-cms-api-key "YOUR_API_KEY"`
+4. Run `vercel` at the project root
