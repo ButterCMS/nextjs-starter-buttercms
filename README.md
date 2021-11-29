@@ -25,7 +25,8 @@ To learn more about Next.js, take a look at the following resources:
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Preview mode
+To see what application really look like before it’s published, add `PREVIEW=true` to your `.env` file and restart your server. From within your butter account, you can also preview changes to the app using our built-in iframe previewer. For more information, see [https://buttercms.com/kb/preview-urls](https://buttercms.com/kb/preview-urls).
 
 ## Deploy on Vercel
 
