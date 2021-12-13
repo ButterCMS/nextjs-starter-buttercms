@@ -72,5 +72,17 @@ npm i -g vercel
 3. Add the API key as a secret `vercel secrets add butter-cms-api-key "YOUR_API_KEY"`
 4. Run `vercel` at the project root
 
+## Webhooks to trigger deployment
+
+Use of the ButterCMS webhooks to notify the application every time a post, page or collection item are added or modified, and reload the Next.js application.
+
+You can add a new webhook by going to the [https://buttercms.com/webhooks/](https://buttercms.com/webhooks/) page.
+
+![webhook page](https://cdn.buttercms.com/ixt8yfOsSgWLlwc0eis1)
+
+If you use Vercel, you can create deploy webhooks there. ![Vercel deploy webhooks](https://cdn.buttercms.com/bPIzuIXTleK7h4Kx3X4L)
+
+Learn more about webhooks [here](https://buttercms.com/docs/api/#webhooks).
+
 ## Preview mode
 To see what application really look like before it’s published, add `PREVIEW=true` to your `.env` file and restart your server. From within your butter account, you can also preview changes to the app using our built-in iframe previewer. For more information, see [https://buttercms.com/kb/preview-urls](https://buttercms.com/kb/preview-urls).
