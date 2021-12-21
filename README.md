@@ -36,7 +36,7 @@ Congratulations! Your starter project is now live: [http://localhost:3000](http:
 
 ## 4) Deploy
 
-Deploy your Butterized proof of concept app and to spread your love of Butter.
+Deploy your Butterized proof of concept app and spread your love of Butter.
 
 ###  Vercel
 
