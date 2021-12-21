@@ -26,7 +26,7 @@ $ echo 'NEXT_PUBLIC_BUTTER_CMS_API_KEY=<Your API Token>' >> .env
 
 ## 3) Run the local server
 
-To view the app in the browser, you'll need to run the local development server:
+To view the app in a browser, you'll need to run the local development server:
 
 ```bash
 npm run dev # or yarn dev
