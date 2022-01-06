@@ -11,8 +11,9 @@ Once created, this project can be easily and quickly deployed to Vercel from the
 
 ## 1) Installation
 
-First, install the dependencies by running one of these commands, depending on your current setup:
+First, install the dependencies by cloning the repo and running one of the following commands, depending on your current setup:
 ```bash
+git clone https://github.com/ButterCMS/nextjs-starter-buttercms.git
 npm install # or yarn install
 ```
 
