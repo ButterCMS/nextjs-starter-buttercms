@@ -79,15 +79,14 @@ export default function BlogPost({ post, categories }) {
                                             <a><i className="lni lni-calendar"></i> <HumanDate dateString={post.published} />
                                             </a>
                                         </li>
-                                        <li>
-                                            {post.tags.map(tag =>
-                                            (<Link key={tag.slug} href={`/blog/tag/${tag.slug}`}>
-                                                <a><i className="lni lni-tag"></i> {tag.name}
-                                                </a></Link>)
-                                            )}
-                                        </li>
-
-
+                                        {post.tags.map(tag => (
+                                            <li key={tag.slug}>
+                                                <Link href={`/blog/tag/${tag.slug}`}>
+                                                    <a><i className="lni lni-tag"></i> {tag.name}
+                                                    </a>
+                                                </Link>
+                                            </li>
+                                        ))}
                                     </ul>
                                 </div>
                                 {post.featuredImage && (
