@@ -1143,10 +1143,8 @@ p {
 }
 
 .cta-section .left-image {
-  position: absolute;
   left: 0px;
   bottom: 0;
-  width: 45%;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
@@ -1158,7 +1156,7 @@ p {
 }
 
 .cta-section .left-image img {
-  width: 100%;
+  max-width: 100%;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
@@ -1231,9 +1229,11 @@ p {
 
 .single-blog .blog-header, .single-post .blog-header, .blog-roll-card .blog-header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  /* changes for Image tag */
   width: 100%;
   height: 200px;
   position: relative;
+  /* end of changes for Image tag */
 }
 
 .single-blog .blog-header h5, .single-post .blog-header h5, .blog-roll-card .blog-header h5 {
@@ -1404,10 +1404,8 @@ p {
 
 .single-post-meta-info, .blog-roll-card-meta-info {
   font-size: 14px;
-  display: flex;
+  display: inline-block;
   position: relative;
-  align-items: center;
-  flex-wrap: wrap;
 }
 
 .single-post-meta-info li, .blog-roll-card-meta-info li {
@@ -1422,8 +1420,6 @@ p {
   color: #888;
   font-size: 14px;
   font-weight: 500;
-  display: flex;
-  align-items: center;
 }
 
 .single-post-meta-info li a img, .blog-roll-card-meta-info li a img {
@@ -1475,7 +1471,9 @@ p {
   border-radius: 0;
   width: 100%;
   margin-top: 15px;
+  /* changes for Image tag */
   height: 300px;
+  /* end of changes for Image tag */
 }
 
 .single-post-thumbnail img {

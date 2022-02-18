@@ -26,13 +26,14 @@ export default function PostsPreview({
             <li>
               <i className="lni lni-calendar"></i> <HumanDate dateString={date} />
             </li>
-            <li>
-              {tags.map(tag =>
-              (<Link key={tag.slug} href={`/blog/tag/${tag.slug}`}>
-                <a><i className="lni lni-tag"></i> {tag.name}
-                </a></Link>)
-              )}
-            </li>
+            {tags.map(tag => (
+              <li key={tag.slug}>
+                <Link href={`/blog/tag/${tag.slug}`}>
+                  <a><i className="lni lni-tag"></i> {tag.name}
+                  </a>
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
         {coverImage && (
