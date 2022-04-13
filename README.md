@@ -30,13 +30,13 @@ This example showcases Next.js's [Static Generation](https://nextjs.org/docs/bas
 
 ## Demo
 
-[https://next-blog-buttercms.vercel.app/](https://next-blog-buttercms.vercel.app/)
+Check out our live demo: [https://nextjs-starter-buttercms.vercel.app/](https://nextjs-starter-buttercms.vercel.app/)
 
 ## Deploy your own
 
-Once you have access to [the environment variables you'll need](#step-2-set-up-environment-variables), deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+Once you have access to your Butter API token, you can deploy your Butterized proof-of-concept app to Vercel, the creators of Next.js, and spread your love of Butter. By clicking the button below, you'll create a copy of our starter project in your Git provider account, instantly deploy it, and institute a full content workflow connected to your ButterCMS account. Smooth.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/cms-buttercms&project-name=cms-buttercms&repository-name=cms-buttercms&env=BUTTERCMS_API_KEY,BUTTERCMS_PREVIEW_SECRET&envDescription=Required%20to%20connect%20the%20app%20with%20ButterCMS&envLink=https://vercel.link/buttercms-env)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FButterCMS%2Fnextjs-starter-buttercms&env=NEXT_PUBLIC_BUTTER_CMS_API_KEY&envDescription=Your%20ButterCMS%20API%20Token&envLink=https%3A%2F%2Fbuttercms.com%2Fsettings%2F&project-name=nextjs-starter-buttercms&repo-name=nextjs-starter-buttercms&redirect-url=https%3A%2F%2Fbuttercms.com%2Fonboarding%2Fvercel-starter-deploy-callback%2F&production-deploy-hook=Deploy%20Triggered%20from%20ButterCMS&demo-title=ButterCMS%20Next.js%20Starter&demo-description=Fully%20integrated%20with%20your%20ButterCMS%20account&demo-url=https%3A%2F%2Fnextjs-starter-buttercms.vercel.app%2F&demo-image=https://cdn.buttercms.com/r0tGK8xFRti2iRKBJ0eY&repository-name=nextjs-starter-buttercms)
 
 ### Related examples
 
@@ -59,6 +59,18 @@ Once you have access to [the environment variables you'll need](#step-2-set-up-e
 
 ## How to use
 
+### Option 1. Install via Github and NPM or Yarn
+
+First, install the dependencies by cloning the repo and running one of the following commands, depending on your current setup:
+
+```bash
+git clone https://github.com/ButterCMS/nextjs-starter-buttercms.git
+cd nextjs-starter-buttercms
+npm install # or yarn install
+``` 
+
+### Option 2. Install via Create-Next-App
+
 Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
 
 ```bash
@@ -75,7 +87,7 @@ pnpm create next-app -- --example cms-buttercms cms-buttercms-app
 
 First, [create an account on ButterCMS](https://buttercms.com/).
 
-After signing up, you’ll be presented with the API key. We’ll use this in the next step.
+After signing up, you’ll be presented with your free API token. We’ll use this in the next step.
 
 ### Step 2. Set up environment variables
 
@@ -88,11 +100,11 @@ cp .env.local.example .env.local
 Then set each variable on `.env.local`:
 
 - `BUTTERCMS_API_KEY` should be set as the API key.
-- `BUTTERCMS_PREVIEW_SECRET` can be any random string (but avoid spaces), like `MY_SECRET` - this is used for [Preview Mode](https://nextjs.org/docs/advanced-features/preview-mode).
 
 ### Step 3. Run Next.js in development mode
 
-When you sign up to ButterCMS, it creates an example blog post automatically. You can run Next.js in development mode to view a blog containing this example post.
+When you sign up to ButterCMS, it creates all of the example content used by this starter project. You can run Next.js in development mode to view your fully-functional starter project, including landing page with 
+API-based components, API-based menu, and a blog.
 
 ```bash
 npm install
@@ -104,9 +116,11 @@ yarn install
 yarn dev
 ```
 
-Your blog should be up and running on [http://localhost:3000](http://localhost:3000)! If it doesn't work, post on [GitHub discussions](https://github.com/vercel/next.js/discussions).
+Your starter project should be up and running on [http://localhost:3000](http://localhost:3000)! If it doesn't work, post on [GitHub discussions](https://github.com/vercel/next.js/discussions).
 
 ### Step 4. Try preview mode
+
+Your starter project is automatically configured to show draft changes saved in your Butter account when run locally or deploy to a hosting provider. To disable this behavior, set the following value in your .env file: PREVIEW=false.
 
 To try preview mode, [create a blog post](https://buttercms.com/post/):
 
