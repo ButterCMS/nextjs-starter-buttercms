@@ -106,7 +106,7 @@ Then set each variable on `.env.local`:
 
 ### Step 3. Run Next.js in development mode
 
-When you sign up to ButterCMS, it creates all of the example content used by this starter project. You can run Next.js in development mode to view your fully-functional starter project, including landing page with 
+When you sign up for ButterCMS, it creates all of the example content used by this starter project. You can run Next.js in development mode to view your fully-functional starter project, including landing page with 
 API-based components, API-based menu, and a blog.
 
 ```bash
@@ -123,7 +123,7 @@ Your starter project should be up and running on [http://localhost:3000](http://
 
 ### Step 4. Try preview mode
 
-Your starter project is automatically configured to show draft changes saved in your Butter account when run locally or deploy to a hosting provider. To disable this behavior, set the following value in your .env file: PREVIEW=false.
+Your starter project is automatically configured to show draft changes saved in your Butter account when run locally or deploy to a hosting provider. To disable this behavior, set the following value in your `.env.local` file: `PREVIEW=false`.
 
 To try preview mode, [create a blog post](https://buttercms.com/post/):
 
@@ -132,11 +132,14 @@ To try preview mode, [create a blog post](https://buttercms.com/post/):
 
 Most importantly, **do not publish** the blog post. Instead, click **Save Draft**.
 
-Now, if you go to the your blog list view page on localhost: [http://localhost:3000/#blog](http://localhost:3000/#blog), you won't see this post because it’s not published. However, if you use **Preview Mode** by deleting `PREVIEW=false` from your `.env.local` file will, your new post will appear ([Documentation](https://nextjs.org/docs/advanced-features/preview-mode)).
+If you have not already, set `PREVIEW=false` in your `.env.local` file and restart your local
+development server.
+
+Now, if you go to the your blog list view page on localhost: [http://localhost:3000/#blog](http://localhost:3000/#blog), you won't see this post, as its status has not yet been updated to `published`. However, if you use **Preview Mode** by deleting `PREVIEW=false` from your `.env.local` file, your new post will appear ([Documentation](https://nextjs.org/docs/advanced-features/preview-mode)).
 
 
 **Tip**: [You can set a preview URL on ButterCMS](https://buttercms.com/kb/preview-urls) for pages
-deployed to Vercel, allowing you to preview changes from within your Butter account!. Sweet!
+deployed to Vercel, allowing you to live-preview changes on the web from within your Butter account! Sweet!
 
 ### Step 5. Deploy on Vercel
 
