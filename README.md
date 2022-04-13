@@ -1,6 +1,6 @@
-# :warning::warning: Note: You probably don't want this repo! :warning::warning:
+# :warning::warning: Note: You probably don't want this branch! :warning::warning:
 
-This repo is a **one-off feature branch** for a tailored version of the starter to be
+This branch is a **one-off feature branch** for a tailored version of the starter to be
 included in the Next.JS examples repository. This branch should never be merged into master!
 
 If you're looking to download the ButterCMS Next.JS starter
@@ -13,6 +13,7 @@ If you need to update our nextjs example inside the nextjs example repo, you wil
 commits from this branch need to stay "on top.")
 - make changes to this repo, merging branches into this feature branch as necessary, but
 DO NOT MERGE THIS BRANCH INTO MASTER.
+- It's important to note that next.js has stringent requirements for updates to the canary repo for these examples. Do NOT try to update the .gitignore. You can add or update sections of the readme, but do not delete sections. Do not pin a specific node version in the requirements. All packages and dependencies need to be updated to the latest version, with no warnings, or the PR will be rejected. Next.js requires the use of the `<Image />` tag, versus `<img>`; as such, the profile image for the various blog posts, etc. has been deleted to make updates easier/quicker.
 - fork the next.js dev branch (canary) and checkout a branch on your fork, e.g., `UPDATE_BUTTERCMS_EXAMPLE`
 - copy all of this repo's updated files into your canary dev branch in the `examples/cms-buttercms` folder,
 replacing the content currently in there. Almost all of the files should stay the same!
