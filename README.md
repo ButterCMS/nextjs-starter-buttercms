@@ -13,6 +13,7 @@ If you need to update our nextjs example inside the nextjs example repo, you wil
 commits from this branch need to stay "on top.")
 - make changes to this repo, merging branches into this feature branch as necessary, but
 DO NOT MERGE THIS BRANCH INTO MASTER.
+- It's important to note that next.js has stringent requirements for updates to the canary repo for these examples. Do NOT try to update the .gitignore. You can add or update sections of the readme, but do not delete sections. Do not pin a specific node version in the requirements. All packages and dependencies need to be updated to the latest version, with no warnings, or the PR will be rejected.
 - fork the next.js dev branch (canary) and checkout a branch on your fork, e.g., `UPDATE_BUTTERCMS_EXAMPLE`
 - copy all of this repo's updated files into your canary dev branch in the `examples/cms-buttercms` folder,
 replacing the content currently in there. Almost all of the files should stay the same!
