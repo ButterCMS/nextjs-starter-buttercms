@@ -1,3 +1,10 @@
+# Note: You probably don't want this repo!
+
+This repo is a one-off feature branch to tailor this project's inclusion in the Next.JS
+examples repository. If you're looking to download the ButterCMS Next.JS starter
+project, you'll want to head over to 
+[https://github.com/ButterCMS/nextjs-starter-buttercms](https://github.com/ButterCMS/nextjs-starter-buttercms)
+instead!
 # Next.js + ButterCMS Starter Project
 Live Demo: https://nextjs-starter-buttercms.vercel.app/
 
