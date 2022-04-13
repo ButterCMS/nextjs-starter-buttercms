@@ -101,7 +101,7 @@ cp .env.local.example .env.local
 
 Then set each variable on `.env.local`:
 
-- `BUTTERCMS_API_KEY` should be set as the API key.
+- `NEXT_PUBLIC_BUTTER_CMS_API_KEY` should be set as the API key.
 
 ### Step 3. Run Next.js in development mode
 
