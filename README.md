@@ -1,7 +1,9 @@
-# Note: You probably don't want this repo!
+# :warning::warning: Note: You probably don't want this repo! :warning::warning:
 
-This repo is a one-off feature branch to tailor this project's inclusion in the Next.JS
-examples repository. If you're looking to download the ButterCMS Next.JS starter
+This repo is a **one-off feature branch** for a tailored version of the starter to be
+included in the Next.JS examples repository. This branch should never be merged into master!
+
+If you're looking to download the ButterCMS Next.JS starter
 project, you'll want to head over to 
 [https://github.com/ButterCMS/nextjs-starter-buttercms](https://github.com/ButterCMS/nextjs-starter-buttercms)
 instead!
