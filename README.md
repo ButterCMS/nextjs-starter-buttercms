@@ -1,6 +1,6 @@
-# :warning::warning: Note: You probably don't want this repo! :warning::warning:
+# :warning::warning: Note: You probably don't want this branch! :warning::warning:
 
-This repo is a **one-off feature branch** for a tailored version of the starter to be
+This branch is a **one-off feature branch** for a tailored version of the starter to be
 included in the Next.JS examples repository. This branch should never be merged into master!
 
 If you're looking to download the ButterCMS Next.JS starter
