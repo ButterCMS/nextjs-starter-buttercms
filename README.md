@@ -20,7 +20,10 @@ replacing the content currently in there. Almost all of the files should stay th
 - delete this little disclaimer at the top of the readme inside the `examples/cms-buttercms` folder
 - Make sure linting passes by running `yarn lint` inside of the next.js repo. If linting
 is not passing because of something outside of our starter project, you can try 
-`yarn lint-no-typescript`. 
+`yarn lint-no-typescript`.
+- Next.JS requires prettier to pass, which uses slightly different formatting than we've developed here. Once you've copied the files into the repo, run
+`yarn prettier --write  examples/cms-buttercms` inside of the repo to have
+it reformat the files.
 - Open a PR to merge your `UPDATE_BUTTERCMS_EXAMPLE` branch into the next.js canary repo.
 
 # A fully-functional, drop-in proof-of-concept Next.js app using ButterCMS
