@@ -13,6 +13,10 @@
         "NEXT_PUBLIC_BUTTER_CMS_API_KEY": {
             "description": "The API token of your ButterCMS account",
             "value": ""
+        },
+        "NEXT_PUBLIC_BUTTER_CMS_API_Value": {
+            "description": "The API token of your ButterCMS account Value",
+            "value": ""
         }
     }
 }
