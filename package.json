@@ -26,6 +26,6 @@
     "eslint-config-next": "^13.1.5"
   },
   "engines": {
-    "node": "14.17.1"
+    "node": ">=14.17.1"
   }
 }
