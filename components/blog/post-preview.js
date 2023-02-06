@@ -1,4 +1,4 @@
-import Image from "next/image"
+import Image from "next/image";
 import Link from "next/link";
 
 import HumanDate from "@/components/human-date"
@@ -18,7 +18,9 @@ export default function PostsPreview({
     <div className="col-12 col-lg-6">
       <div className="blog-roll-card">
         <div className="blog-roll-card-meta">
-          <h2 className="blog-roll-card-header"><Link href={`/blog/${slug}`}><a>{title}</a></Link></h2>
+          <h2 className="blog-roll-card-header">
+            <Link href={`/blog/${slug}`}>{title}</Link>
+          </h2>
           <ul className="blog-roll-card-meta-info">
             <li>
               <AuthorCard author={author} />
@@ -29,8 +31,7 @@ export default function PostsPreview({
             {tags.map(tag => (
               <li key={tag.slug}>
                 <Link href={`/blog/tag/${tag.slug}`}>
-                  <a><i className="lni lni-tag"></i> {tag.name}
-                  </a>
+                  <i className="lni lni-tag"></i> {tag.name}
                 </Link>
               </li>
             ))}
@@ -41,17 +42,21 @@ export default function PostsPreview({
             <Image
               src={coverImage}
               alt={coverImageAlt}
-              layout="fill"
-              objectFit="cover"
-            />
+              fill
+              sizes="100vw"
+              style={{
+                objectFit: "cover"
+              }} />
           </div>
         )}
         <div className="blog-roll-card-body prose" dangerouslySetInnerHTML={{ __html: excerpt }}>
         </div>
         <div className="blog-roll-card-footer text-center">
-          <Link href={`/blog/${slug}`}><a className="main-btn btn-hover">Read More</a></Link>
+          <Link href={`/blog/${slug}`} className="main-btn btn-hover">
+            Read More
+          </Link>
         </div>
       </div>
     </div>
-  )
+  );
 }

@@ -14,10 +14,8 @@ export default function Blog({ posts }) {
                                 to launch a new company blog.
                             </p>
                             <p>
-                                <Link href={`/blog`}>
-                                    <a
-                                        className="main-btn btn-hover mt-5">View All Blog Posts
-                                    </a>
+                                <Link href={`/blog`} className="main-btn btn-hover mt-5">
+                                    View All Blog Posts
                                 </Link>
                             </p>
                         </div>
