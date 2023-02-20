@@ -19,12 +19,12 @@ export default function Tag({ posts, categories, slug }) {
                             <div className="section-title text-center">
                                 <h2>Blog Posts by Tag</h2>
                                 <ul className="breadcrumb-nav">
-                                    <li><Link href="/">
-                                        <a>Home</a>
-                                    </Link></li>
-                                    <li><Link href="/blog">
-                                        <a>Blog</a>
-                                    </Link></li>
+                                    <li>
+                                        <Link href="/">Home</Link>
+                                    </li>
+                                    <li>
+                                        <Link href="/blog">Blog</Link>
+                                    </li>
                                     <li>Tag: {slug}</li>
                                 </ul>
                             </div>

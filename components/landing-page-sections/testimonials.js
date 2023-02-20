@@ -1,26 +1,26 @@
 import { useEffect } from "react";
 
-import { tns } from "tiny-slider"
-
 import Testimonial from "./testimonial";
 
 export default function Testimonials({ headline, testimonial: testimonials, scrollAnchorId }) {
 	useEffect(() => {
-		tns({
-			container: '.testimonial-active',
-			autoplay: true,
-			autoplayTimeout: 5000,
-			autoplayButtonOutput: false,
-			mouseDrag: true,
-			gutter: 0,
-			nav: false,
-			navPosition: "bottom",
-			controls: true,
-			controlsText: [
-				'<i class="lni lni-chevron-left"></i>',
-				'<i class="lni lni-chevron-right"></i>',
-			],
-			items: 1,
+		import('tiny-slider').then(({tns}) => {
+			tns({
+				container: '.testimonial-active',
+				autoplay: true,
+				autoplayTimeout: 5000,
+				autoplayButtonOutput: false,
+				mouseDrag: true,
+				gutter: 0,
+				nav: false,
+				navPosition: "bottom",
+				controls: true,
+				controlsText: [
+					'<i class="lni lni-chevron-left"></i>',
+					'<i class="lni lni-chevron-right"></i>',
+				],
+				items: 1,
+			});
 		});
 	})
 
@@ -51,6 +51,5 @@ export default function Testimonials({ headline, testimonial: testimonials, scro
 				</div>
 			</div>
 		</section>
-
 	)
 }

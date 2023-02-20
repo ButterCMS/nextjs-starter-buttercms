@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from "next/image";
 
 export default function MissingTokenSection() {
     return (
@@ -20,11 +20,14 @@ export default function MissingTokenSection() {
                             height={300}
                             src="https://cdn.buttercms.com/9bPtzdJ6QSWkySNjlmyR"
                             alt=""
-                        />
+                            style={{
+                                maxWidth: "100%",
+                                height: "auto"
+                            }} />
                         <div className="hero-image text-center text-lg-end"></div>
                     </div>
                 </div>
             </div>
         </section>
-    )
+    );
 }

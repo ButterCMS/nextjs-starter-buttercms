@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from 'next/image'
+import Image from "next/image";
 
 export default function PostPreviewCondensed({
   title,
@@ -16,22 +16,24 @@ export default function PostPreviewCondensed({
             <Image
               src={coverImage}
               alt={coverImageAlt}
-              layout='fill'
-              objectFit='cover'
-            />
+              fill
+              sizes="100vw"
+              style={{
+                objectFit: "cover"
+              }} />
           </div>
         )}
         <div className="blog-body">
           <h5 className="package-name">
             <Link href={`/blog/${slug}`}>
-              <a>{title}</a>
+              {title}
             </Link>
           </h5>
           <p>{excerpt}</p>
         </div>
         <div className="blog-footer">
-          <Link href={`/blog/${slug}`}>
-            <a className="main-btn btn-hover">Read More</a>
+          <Link href={`/blog/${slug}`} className="main-btn btn-hover">
+            Read More
           </Link>
         </div>
       </div>

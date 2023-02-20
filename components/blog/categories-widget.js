@@ -7,7 +7,7 @@ export default function CategoriesWidget({ categories }) {
             <ul className="categories-list">
                 {categories.map(category => (<li key={category.slug}>
                     <Link href={`/blog/category/${category.slug}`}>
-                        <a>{category.name}</a>
+                        {category.name}
                     </Link>
                 </li>))}
             </ul>

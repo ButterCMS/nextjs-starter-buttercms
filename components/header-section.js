@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 
-import Image from 'next/image'
+import Image from "next/image";
 
 import MainMenu from "./main-menu/main-menu";
 
@@ -35,7 +35,10 @@ export default function HeaderSection({ mainMenu }) {
                                         alt="Logo"
                                         width={180}
                                         height={45}
-                                    />
+                                        style={{
+                                            maxWidth: "100%",
+                                            height: "auto"
+                                        }} />
                                 </a>
                                 <MainMenu mainMenuLinks={mainMenu} />
                             </nav>
@@ -44,5 +47,5 @@ export default function HeaderSection({ mainMenu }) {
                 </div>
             </div>
         </header>
-    )
+    );
 }
