@@ -11,7 +11,7 @@
     "@popperjs/core": "^2.11.6",
     "acorn": "^8.8.2",
     "bootstrap": "^5.2.3",
-    "buttercms": "^1.2.9",
+    "buttercms": "^1.2.15",
     "camelcase-keys": "^8.0.2",
     "date-fns": "^2.29.3",
     "next": "^13.1.5",
