@@ -25,7 +25,7 @@ export default function FooterSection({ mainMenu }) {
                                         }} />
                                 </a>
                             </div>
-                            <p className="desc">ButterCMS is your content backend. Build better with Butter.</p>
+                            <p className="desc"> Test ButterCMS is your content backend. Build better with Butter Test.</p>
                             <ul className="social-links">
                                 <li><a href="#0"><i className="lni lni-facebook"></i></a></li>
                                 <li><a href="#0"><i className="lni lni-linkedin"></i></a></li>
