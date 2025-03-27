@@ -27,7 +27,13 @@ module.exports = {
     )
   },
   images: {
-    domains: ["cdn.buttercms.com"],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'cdn.buttercms.com',
+        pathname: '**',
+      },
+    ],
     dangerouslyAllowSVG: true,
   },
 };
