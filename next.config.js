@@ -1,4 +1,5 @@
 module.exports = {
+  trailingSlash: true,
   reactStrictMode: true,
   async rewrites() {
     return [
